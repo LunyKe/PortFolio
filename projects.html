@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portefolio J.C</title>
+  <script defer src="/portefolio.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-zinc-950 w-full">
+
+  <!-- Lampe de lave -->
+  <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
+
+  <!-- Barre de navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/index.html" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
+      <ul class="flex gap-6 text-white font-medium">
+        <li><a href="/index.html" class="nav-link px-2 py-1 hover:text-orange-400">Home</a></li>
+        <li><a href="/about.html" class="nav-link px-2 py-1 hover:text-orange-400">About Me</a></li>
+        <li><a href="#" class="nav-link px-2 py-1 text-orange-400">Projects</a></li>
+        <li><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="max-w-6xl mx-auto py-12">
+    <div class="max-w-4xl mx-auto py-12">
+      <h2 class="text-center text-orange-400 text-3xl font-bold mb-6">Mes Projets</h2>
+
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-zinc-900 p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
+            <img src="img/logonav2.png" alt="Projet 1" class="w-40 h-40 rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-orange-400">Mon premier Projet (NébulaX)</h3>
+            <p class="text-gray-300 text-sm text-center">Voici mon premier site vitrine d'un Projet scolaire</p>
+            <a href="https://lunyke.github.io/AP1-Ipssi/" target="_blank" class="mt-4 px-5 py-2 bg-orange-500 rounded-md hover:bg-orange-600">Voir le projet</a>
+          </div>
+
+          <!-- Slide 2
+          <div class="swiper-slide bg-zinc-900 p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
+            <img src="images/projet2.jpg" alt="Projet 2" class="w-40 h-40 rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-orange-400">Projet 2</h3>
+            <p class="text-gray-300 text-sm text-center">Un projet avec animations avancées.</p>
+            <a href="#" target="_blank" class="mt-4 px-5 py-2 bg-orange-500 rounded-md hover:bg-orange-600">Voir le projet</a>
+          </div> -->
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-zinc-900 p-6 rounded-lg shadow-lg flex flex-col items-center text-white">
+            <img src="img/react-logo-1.webp" alt="Projet 3" class="w-40 h-40 rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-orange-400">Projet React</h3>
+            <p class="text-gray-300 text-sm text-center">Mes début sur React </p>
+            <a href="" target="_blank" class="mt-4 px-5 py-2 bg-orange-500 rounded-md hover:bg-orange-600">Voir le projet</a>
+          </div>
+
+        </div>
+
+        <!-- Pagination et boutons -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <style>
+    .flip-card {
+      transform-style: preserve-3d;
+      transition: transform 0.7s ease-in-out;
+    }
+
+    .flip-card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .backface-hidden {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+
+
+
+
+  <style>
+    .flip-card {
+      transform-style: preserve-3d;
+      transition: transform 0.7s ease-in-out;
+    }
+
+    .flip-card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .backface-hidden {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+  </style>
+
+  <footer class="bg-zinc-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+      <p class="text-lg font-semibold text-orange-400">Jordan Campillo-Duquesne | Artisan du Code</p>
+      <ul class="flex gap-4 text-sm">
+        <li><a href="/about.html" class="hover:text-orange-400 transition">About Me</a></li>
+        <li><a href="/contact.html" class="hover:text-orange-400 transition">Contacts</a></li>
+        <li><a href="https://github.com/LunyKe" class="hover:text-orange-400 transition">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/"
+            class="hover:text-orange-400 transition">LinkedIn</a></li>
+      </ul>
+      <p class="text-xs text-gray-400">© 2025 Jordan Campillo-Duquesne. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <style>
+    /* Lampe de lave */
+    #lava-lamp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    /* Animation des bulles */
+    @keyframes float {
+      0% {
+        transform: translateY(0%) rotate(0deg) scale(0.8);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: translateY(-50vh) rotate(45deg) scale(1.2);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(90deg) scale(1);
+
+        .bubble {
+          position: absolute;
+          bottom: 0;
+          width: 50px;
+          height: 50px;
+          background-color: orange;
+          border-radius: 50%;
+          animation: float 5s linear infinite;
+
+        }
+      }
+    }
+  </style>
+</body>
+
+</html>

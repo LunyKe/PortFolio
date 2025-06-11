@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portefolio J.C</title>
+  <script defer src="/portefolio.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 w-full">
+
+  <!-- Lampe de lave -->
+  <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
+
+  <!-- Barre de navigation -->
+<nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    
+    <!-- Logo -->
+    <a href="/index.html" class="text-orange-400 text-2xl font-bold tracking-wide">
+      J.C | Dev
+    </a>
+
+    <!-- Liens -->
+    <ul class="flex gap-6 text-white font-medium relative">
+      <li class="relative"><a href="/index.html" class="nav-link px-2 py-1 hover:text-orange-400">Home</a></li>
+      <li class="relative"><a href="/about.html" class="nav-link px-2 py-1 hover:text-orange-400">About Me</a></li>
+      <li class="relative"><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Projects</a></li>
+      <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400 ">Contacts</a></li>
+      
+    </ul>
+    
+
+  </div>
+</nav>
+
+
+<section class="max-w-md mx-auto py-16 bg-gradient-to-r from-zinc-900 to-gray-800 text-white rounded-lg shadow-xl mt-24 p-8">
+  <h2 class="text-orange-400 text-4xl font-bold mb-8 text-center">Me Contacter</h2>
+
+  <!-- Photo -->
+  <div class="flex flex-col items-center mb-8">
+    <img src="img/fixe.jpg" alt="Photo de profil" class="w-32 h-32 rounded-full shadow-lg border-4 border-orange-500">
+    <h3 class="text-xl font-semibold mt-4">Jordan</h3>
+    <p class="text-sm text-gray-400">Développeur Web Passionné</p>
+  </div>
+
+ <!-- Icônes Contact -->
+<div class="flex flex-col items-center gap-8">
+  
+  <!-- Email -->
+  <a href="mailto:Jduquesne17@gmail.com" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110">
+    <span class="text-4xl">📧</span>
+    <span class="text-xl font-semibold">Par Email</span>
+  </a>
+  
+  <!-- Téléphone -->
+  <a href="#" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110">
+    <span class="text-4xl">📞</span>
+    <span class="text-xl font-semibold">Par Téléphone : 06 48 43 63 40</span>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/jcmpduk" target="_blank" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110">
+    <img src="/img/OIP-removebg-preview.png" alt="Instagram" class="w-14 h-14 rounded-lg shadow-xl">
+    <span class="text-xl font-semibold">Sur Instagram</span>
+  </a>
+  
+  <!-- Discord -->
+  <a href="https://discord.com" target="_blank" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110">
+    <img class="w-14" src="/img/discord-logo-0.webp" alt="Discord" class=" rounded-lg shadow-xl s-40">
+    <span class="text-xl font-semibold">Mon Discord : darkrevan_</span>
+  </a>
+
+</div>
+</section>
+
+
+
+
+  <footer class="bg-zinc-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+
+      <!-- Logo / Nom -->
+      <p class="text-lg font-semibold text-orange-400">
+        Jordan Campillo-Duquesne | Artisan du Code
+      </p>
+
+      <!-- Liens -->
+      <ul class="flex gap-4 text-sm">
+        <li><a href="/about.html" class="hover:text-orange-400 transition">À propos</a></li>
+        <li><a href="/projects.html" class="hover:text-orange-400 transition">Projects</a></li>
+        <li><a href="https://github.com/LunyKe" class="hover:text-orange-400 transition">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/"
+            class="hover:text-orange-400 transition">LinkedIn</a></li>
+      </ul>
+
+      <!-- Copyright -->
+      <p class="text-xs text-gray-400">© 2025 Jordan Campillo-Duquesne. Tous droits réservés.</p>
+
+    </div>
+  </footer>
+
+
+
+
+  <style>
+    /* Lampe de lave */
+    #lava-lamp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    /* Animation des bulles */
+    @keyframes float {
+      0% {
+        transform: translateY(0%) rotate(0deg) scale(0.8);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: translateY(-50vh) rotate(45deg) scale(1.2);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(90deg) scale(1);
+
+        .bubble {
+          position: absolute;
+          bottom: 0;
+          width: 50px;
+          height: 50px;
+          background-color: orange;
+          border-radius: 50%;
+          animation: float 5s linear infinite;
+
+        }
+      }
+    }
+  </style>
+</body>
+
+</html>

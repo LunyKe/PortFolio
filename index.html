@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portefolio J.C</title>
+  <script defer src="/portefolio.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 w-full">
+
+  <!-- Lampe de lave -->
+  <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
+
+  <!-- Barre de navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" class="text-orange-400 text-2xl font-bold tracking-wide">
+        J.C | Dev
+      </a>
+
+      <!-- Liens -->
+      <ul class="flex gap-6 text-white font-medium relative">
+        <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400">Home</a></li>
+        <li class="relative"><a href="/about.html" class="nav-link px-2 py-1 hover:text-orange-400">About Me</a></li>
+        <li class="relative"><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Projects</a></li>
+        <li class="relative"><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+  <!-- Texte au centre -->
+  <div class="flex flex-col items-center justify-center h-screen mx-auto gap-8">
+    <!-- Section image -->
+    <div>
+      <img class="rounded-full w-64 h-64 shadow-lg border-4 border-orange-500" alt="moi" src="/img/IAmage.jpg">
+    </div>
+
+    <!-- Section texte -->
+    <div class="flex flex-col items-center justify-center text-center">
+      <h1 class="text-5xl font-extrabold text-orange-400">Portefolio J.C</h1>
+      <p class="text-lg text-orange-300 font-semibold tracking-wide">Artisan du Code & Magicien des Interfaces</p>
+      <p class="text-lg text-white font-light">Bienvenue sur mon portefolio</p>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-zinc-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+
+      <!-- Logo / Nom -->
+      <p class="text-lg font-semibold text-orange-400">
+        Jordan Campillo-Duquesne | Artisan du Code
+      </p>
+
+      <!-- Liens -->
+      <ul class="flex gap-4 text-sm">
+        <li><a href="/about.html" class="hover:text-orange-400 transition">About Me</a></li>
+        <li><a href="/contact.html" class="hover:text-orange-400 transition">Contacts</a></li>
+        <li><a href="https://github.com/LunyKe" class="hover:text-orange-400 transition">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/"
+            class="hover:text-orange-400 transition">LinkedIn</a></li>
+      </ul>
+
+      <!-- Copyright -->
+      <p class="text-xs text-gray-400">© 2025 Jordan Campillo-Duquesne. Tous droits réservés.</p>
+
+    </div>
+  </footer>
+
+  <style>
+    /* Lampe de lave */
+    #lava-lamp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    /* Animation des bulles */
+    @keyframes float {
+      0% {
+        transform: translateY(0%) rotate(0deg) scale(0.8);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: translateY(-50vh) rotate(45deg) scale(1.2);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(90deg) scale(1);
+
+        .bubble {
+          position: absolute;
+          bottom: 0;
+          width: 50px;
+          height: 50px;
+          background-color: orange;
+          border-radius: 50%;
+          animation: float 5s linear infinite;
+
+        }
+      }
+    }
+  </style>
+</body>
+
+</html>
