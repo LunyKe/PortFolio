@@ -4,77 +4,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portefolio J.C</title>
-  <script defer src="/portefolio.js"></script>
+  <title>À mon sujet | Portefolio J.C</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/portefolio.js"></script>
+  <style>
+    .pre-hidden {
+      opacity: 0;
+    }
+
+    @keyframes fade-in-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fade-in-down 1s ease-out;
+    }
+  </style>
 </head>
 
-<body class="bg-zinc-950 w-full">
+<body class="bg-zinc-950 min-h-screen text-white">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
+  <!-- Barre de navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-10">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="/index.html" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
+      <a href="/" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
       <ul class="flex gap-6 text-white font-medium">
-        <li><a href="/index.html" class="nav-link px-2 py-1 hover:text-orange-400">Home</a></li>
-        <li><a href="#" class="nav-link px-2 py-1 text-orange-400">About me</a></li>
-        <li><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Projects</a></li>
-        <li><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+        <li><a href="/" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
+        <li><a href="/about.html" class="nav-link px-2 py-1 text-orange-400">À mon sujet</a></li>
+        <li><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
+        <li><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contactes</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Section À mon sujet -->
-  <section class="relative max-w-4xl mx-auto py-24 text-white">
-    <h1 class="text-4xl font-bold text-orange-400 text-center mb-12 drop-shadow-lg">À mon sujet</h1>
+  <main class="pt-32 flex flex-col items-center gap-12 px-4">
 
-    <!-- Conteneur principal -->
-    <div
-      class="flex flex-col md:flex-row items-center gap-10 bg-orange-900/20 backdrop-blur-xl shadow-2xl shadow-orange-500/40 p-10 rounded-3xl border border-orange-500/50 mt-20">
+    <!-- Titre -->
+    <h1 class="pre-hidden text-4xl md:text-5xl font-extrabold text-orange-400 animate-fade-in-down"
+      style="animation-delay:0.1s;">
+      À mon sujet
+    </h1>
 
-     
+    <!-- Bio personnalisée -->
+    <section
+      class="bg-orange-900/20 backdrop-blur-xl shadow-2xl shadow-orange-500/40 p-10 rounded-3xl border border-orange-500/50 pre-hidden max-w-2xl text-center text-lg text-gray-200 animate-fade-in-down"
+      style="animation-delay:0.2s;">
+      <p>
+        Bonjour, je m'appelle Jordan Campillo-Duquesne.<br>
+        Passionné par le développement web et l’UX, je m’investis dans la création d’expériences numériques élégantes et
+        performantes.<br>
+        J’aime apprendre, partager et relever de nouveaux défis techniques.<br>
+        J'ai commencé à apprendre le développement web en octobre 2024, et je suis passionné par ce domaine.<br>
+        J'ai travaillé sur plusieurs projets personnels et professionnels et je souhaite évoluer dans cet univers
+        fascinant.<br>
+      </p>
+      <p class="leading-relaxed italic text-orange-300 mt-4">
+        Objectif : Continuer à découvrir de nouvelles technologies pour perfectionner mes compétences.
+      </p>
+    </section>
 
-      <!-- Texte -->
-      <div class="flex flex-col gap-6">
-        <p class="text-lg leading-relaxed">
-          Je m'appelle <span class="font-semibold text-orange-300">Jordan Campillo-Duquesne</span>, j'ai 22 ans et je
-          suis
-          <span class="underline decoration-orange-400">Développeur web (Junior)</span>.
-        </p>
-        <p class="text-lg leading-relaxed">
-          J'ai commencé à apprendre le développement web en octobre 2024, et je suis passionné par ce domaine.
-          J'ai travaillé sur plusieurs projets personnels et professionnels et je souhaite évoluer dans cet univers
-          fascinant.
-        </p>
-        <p class="text-lg leading-relaxed italic text-orange-300">
-          Objectif : Continuer à découvrir de nouvelles technologies pour perfectionner mes compétences.
-        </p>
+
+
+    <!-- Timeline -->
+    <section class="pre-hidden w-full max-w-3xl animate-fade-in-down" style="animation-delay:0.3s;">
+      <h2 class="text-2xl font-bold text-orange-300 mb-4">Mon parcours</h2>
+      <ul class="border-l-2 border-orange-400 pl-6 space-y-6">
+        <li>
+          <span class="text-orange-400 font-semibold">2024</span> – Développeur Fullstack chez
+          <span class="font-semibold inline-flex items-center gap-2">
+            Kinesso
+            <img src="img/kinesso_japan_logo.jpg" alt="logo Kinesso"
+              class="w-6 h-6 inline-block align-middle" />
+          </span>
+        </li>
+        <li>
+          <span class="text-orange-400 font-semibold"> 2024-2026</span> – Formation BTS SIO (Slam) - IPSSI 
+        </li>
+        <li>
+          <span class="text-orange-400 font-semibold">2021-2023</span> – BTS MCO (Management Commercial Opérationnel) - Lycée
+          Albert De Mun , Paris
+        </li>
+        <li>
+          <span class="text-orange-400 font-semibold">2021-2023</span> – Baccalauréat Pro. Commerce - Lycée Saint Vincent De Paul, Versailles
+        </li>
+      </ul>
+    </section>
+
+    <!-- Compétences -->
+    <section class="pre-hidden w-full max-w-3xl animate-fade-in-down" style="animation-delay:0.4s;">
+      <h2 class="text-2xl font-bold text-orange-300 mb-4">Compétences</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+            class="w-12 h-12 mb-2">
+          <span>HTML5</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+            class="w-12 h-12 mb-2">
+          <span>CSS3</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript" class="w-12 h-12 mb-2">
+          <span>JavaScript</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+            class="w-12 h-12 mb-2">
+          <span>React</span>
+        </div>
+        <!-- Ajoute d'autres compétences si besoin -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section Compétences -->
-  <section class="max-w-4xl mx-auto py-16 text-white">
-    <h2 class="text-3xl font-bold text-orange-400 text-center mb-10">Mes compétences</h2>
-    <div class="flex flex-wrap justify-center gap-6">
-      <span class="bg-orange-500 px-4 py-2 rounded-md shadow-md text-lg">HTML</span>
-      <span class="bg-orange-500 px-4 py-2 rounded-md shadow-md text-lg">CSS / Tailwind</span>
-      <span class="bg-orange-500 px-4 py-2 rounded-md shadow-md text-lg">JavaScript</span>
-      <span class="bg-orange-500 px-4 py-2 rounded-md shadow-md text-lg">React</span>
-      <span class="bg-orange-500 px-4 py-2 rounded-md shadow-md text-lg">SQL</span>
-    </div>
-  </section>
+    <!-- Soft skills (optionnel) -->
+    <section class="pre-hidden w-full max-w-3xl animate-fade-in-down" style="animation-delay:0.5s;">
+      <h2 class="text-2xl font-bold text-orange-300 mb-4">Qualités humaines</h2>
+      <ul class="flex flex-wrap gap-4 justify-center text-gray-300 text-lg">
+        <li class="bg-zinc-800 px-4 py-2 rounded-full hover:">Curieux</li>
+        <li class="bg-zinc-800 px-4 py-2 rounded-full">Créatif</li>
+        <li class="bg-zinc-800 px-4 py-2 rounded-full">Rigoureux</li>
+        <li class="bg-zinc-800 px-4 py-2 rounded-full">Esprit d'équipe</li>
+        <li class="bg-zinc-800 px-4 py-2 rounded-full">Autonome</li>
+      </ul>
+    </section>
 
-  <!-- Section Objectifs -->
-  <section class="max-w-4xl mx-auto py-16 text-white">
-    <h2 class="text-3xl font-bold text-orange-400 text-center mb-10">Mes objectifs</h2>
-    <p class="text-lg leading-relaxed text-center max-w-2xl mx-auto">
-      Je veux continuer à apprendre et à créer des projets innovants, améliorer mes compétences en
-      <span class="font-semibold text-orange-300">backend et en développement web</span>, et évoluer dans un
-      environnement stimulant.
-    </p>
-  </section>
- 
+  </main>
 
   <!-- Footer -->
   <footer class="bg-zinc-900 text-white py-6 mt-12">
@@ -85,10 +149,10 @@
         Jordan Campillo-Duquesne | Artisan du Code
       </p>
 
-      <!-- Mes liens -->
+      <!-- Liens -->
       <ul class="flex gap-4 text-sm">
+        <li><a href="/about.html" class="hover:text-orange-400 transition">About Me</a></li>
         <li><a href="/contact.html" class="hover:text-orange-400 transition">Contacts</a></li>
-        <li><a href="/projects.html" class="hover:text-orange-400 transition">Projects</a></li>
         <li><a href="https://github.com/LunyKe" class="hover:text-orange-400 transition">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/"
             class="hover:text-orange-400 transition">LinkedIn</a></li>
@@ -101,46 +165,6 @@
   </footer>
 
 
-  <style>
-    /* Lampe de lave */
-    #lava-lamp {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    /* Animation des bulles */
-    @keyframes float {
-      0% {
-        transform: translateY(0%) rotate(0deg) scale(0.8);
-        opacity: 0.5;
-      }
-
-      50% {
-        transform: translateY(-50vh) rotate(45deg) scale(1.2);
-        opacity: 0.9;
-      }
-
-      100% {
-        transform: translateY(-100vh) rotate(90deg) scale(1);
-
-        .bubble {
-          position: absolute;
-          bottom: 0;
-          width: 50px;
-          height: 50px;
-          background-color: orange;
-          border-radius: 50%;
-          animation: float 5s linear infinite;
-
-        }
-      }
-    }
-  </style>
 </body>
 
 </html>

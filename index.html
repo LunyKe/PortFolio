@@ -25,30 +25,45 @@
 
       <!-- Liens -->
       <ul class="flex gap-6 text-white font-medium relative">
-        <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400">Home</a></li>
-        <li class="relative"><a href="/about.html" class="nav-link px-2 py-1 hover:text-orange-400">About Me</a></li>
-        <li class="relative"><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Projects</a></li>
-        <li class="relative"><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+        <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400">Accueil</a></li>
+        <li class="relative"><a href="/about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
+        <li class="relative"><a href="/projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
+        <li class="relative"><a href="/contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contactes</a></li>
       </ul>
 
 
     </div>
   </nav>
 
-  <!-- Texte au centre -->
-  <div class="flex flex-col items-center justify-center h-screen mx-auto gap-8">
-    <!-- Section image -->
-    <div>
-      <img class="rounded-full w-64 h-64 shadow-lg border-4 border-orange-500" alt="moi" src="/img/IAmage.jpg">
-    </div>
-
-    <!-- Section texte -->
-    <div class="flex flex-col items-center justify-center text-center">
-      <h1 class="text-5xl font-extrabold text-orange-400">Portefolio J.C</h1>
-      <p class="text-lg text-orange-300 font-semibold tracking-wide">Artisan du Code & Magicien des Interfaces</p>
-      <p class="text-lg text-white font-light">Bienvenue sur mon portefolio</p>
-    </div>
+ <div class="flex flex-col items-center justify-center h-screen mx-auto gap-8">
+  <!-- Section image -->
+  <div>
+    <img class="pre-hidden rounded-full h-64 w-64 mt-12 shadow-lg border-4 border-orange-500 animate-fade-in-down"
+      style="animation-delay: 0.1s;" alt="moi" src="/img/IAmage.jpg">
   </div>
+
+  <!-- Section texte -->
+  <div class="flex flex-col items-center justify-center text-center gap-4">
+    <h1 class="pre-hidden text-5xl md:text-6xl font-extrabold text-orange-400 animate-fade-in-down" style="animation-delay: 0.2s;">
+      Portefolio J.C
+    </h1>
+    <p class="pre-hidden text-xl md:text-2xl text-orange-300 font-semibold tracking-wide animate-fade-in-down" style="animation-delay: 0.3s;">
+      Artisan du Code & Magicien des Interfaces
+    </p>
+    <p class="pre-hidden text-lg md:text-xl text-white font-light animate-fade-in-down" style="animation-delay: 0.4s;">
+      Bienvenue sur mon portefolio
+    </p>
+    <p class="pre-hidden text-base md:text-lg text-gray-300 max-w-xl animate-fade-in-down" style="animation-delay: 0.5s;">
+      Développeur passionné par le front-end et l’UX, je conçois des interfaces modernes et interactives.<br>
+      Curieux, créatif et rigoureux, je transforme vos idées en expériences numériques uniques.
+    </p>
+    <a href="/projects.html"
+      class="pre-hidden mt-2 inline-block bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition animate-fade-in-down"
+      style="animation-delay: 0.6s;">
+      Voir mes projets
+    </a>
+  </div>
+</div>
 
 
   <!-- Footer -->
@@ -85,6 +100,26 @@
       height: 100%;
       z-index: -1;
       overflow: hidden;
+    }
+
+    .pre-hidden {
+  opacity: 0;
+}
+
+    @keyframes fade-in-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fade-in-down 1s ease-out;
     }
 
     /* Animation des bulles */

@@ -78,3 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 500, // Durée de transition
   });
 });
+
+ document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.pre-hidden').forEach(el => {
+      // Quand l’animation commence, on retire la classe qui cache l’élément
+      el.addEventListener('animationstart', () => {
+        el.classList.remove('pre-hidden');
+      }, { once: true });
+    });
+  });
