@@ -79,11 +79,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
- document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.pre-hidden').forEach(el => {
-      // Quand l’animation commence, on retire la classe qui cache l’élément
-      el.addEventListener('animationstart', () => {
-        el.classList.remove('pre-hidden');
-      }, { once: true });
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.pre-hidden').forEach(el => {
+    // Quand l’animation commence, on retire la classe qui cache l’élément
+    el.addEventListener('animationstart', () => {
+      el.classList.remove('pre-hidden');
+    }, { once: true });
   });
+});
+
+// Affiche le bouton après un certain scroll
+const btn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    btn.classList.remove('opacity-0', 'pointer-events-none');
+    btn.classList.add('opacity-100');
+  } else {
+    btn.classList.add('opacity-0', 'pointer-events-none');
+    btn.classList.remove('opacity-100');
+  }
+});
+// Scroll vers le haut au clic
+btn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  if (burgerBtn && mobileMenu && closeMenu) {
+    burgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.add('opacity-100');
+    });
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.remove('opacity-100');
+    });
+  }
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+    mobileMenu.classList.remove('opacity-100');
+  });
+});

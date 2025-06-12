@@ -52,11 +52,16 @@
       style="animation-delay:0.1s;">
       À mon sujet
     </h1>
+    <p class="text-orange-300 italic text-lg mb-4">"Créer, apprendre, partager : ma vision du web."</p>
 
     <!-- Bio personnalisée -->
     <section
       class="bg-orange-900/20 backdrop-blur-xl shadow-2xl shadow-orange-500/40 p-10 rounded-3xl border border-orange-500/50 pre-hidden max-w-2xl text-center text-lg text-gray-200 animate-fade-in-down"
       style="animation-delay:0.2s;">
+      <div class="flex justify-center mb-6">
+        <img src="/img/IAmage.jpg" alt="Photo de Jordan"
+          class="rounded-full w-32 h-32  border-4 border-orange-500 shadow-lg">
+      </div>
       <p>
         Bonjour, je m'appelle Jordan Campillo-Duquesne.<br>
         Passionné par le développement web et l’UX, je m’investis dans la création d’expériences numériques élégantes et
@@ -69,6 +74,10 @@
       <p class="leading-relaxed italic text-orange-300 mt-4">
         Objectif : Continuer à découvrir de nouvelles technologies pour perfectionner mes compétences.
       </p>
+      <a href="Doc/campillo-jordan-cv 2.pdf" target="_blank"
+        class="mt-6 inline-block bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition">
+        Télécharger mon CV
+      </a>
     </section>
 
 
@@ -78,51 +87,108 @@
       <h2 class="text-2xl font-bold text-orange-300 mb-4">Mon parcours</h2>
       <ul class="border-l-2 border-orange-400 pl-6 space-y-6">
         <li>
-          <span class="text-orange-400 font-semibold">2024</span> – Développeur Fullstack chez
+          <span class="text-orange-400 font-semibold">2024</span> – (Stage) Développeur Fullstack chez
           <span class="font-semibold inline-flex items-center gap-2">
             Kinesso
-            <img src="img/kinesso_japan_logo.jpg" alt="logo Kinesso"
-              class="w-6 h-6 inline-block align-middle" />
+            <img src="img/kinesso_japan_logo.jpg" alt="logo Kinesso" class="w-6 h-6 inline-block align-middle" />
           </span>
         </li>
         <li>
-          <span class="text-orange-400 font-semibold"> 2024-2026</span> – Formation BTS SIO (Slam) - IPSSI 
+          <span class="text-orange-400 font-semibold"> 2024-2026</span> – Formation BTS SIO (Slam) - IPSSI
         </li>
         <li>
-          <span class="text-orange-400 font-semibold">2021-2023</span> – BTS MCO (Management Commercial Opérationnel) - Lycée
+          <span class="text-orange-400 font-semibold">2021-2023</span> – BTS MCO (Management Commercial Opérationnel) -
+          Lycée
           Albert De Mun , Paris
         </li>
         <li>
-          <span class="text-orange-400 font-semibold">2021-2023</span> – Baccalauréat Pro. Commerce - Lycée Saint Vincent De Paul, Versailles
+          <span class="text-orange-400 font-semibold">2021-2023</span> – Baccalauréat Pro. Commerce - Lycée Saint
+          Vincent De Paul, Versailles
         </li>
       </ul>
     </section>
 
-    <!-- Compétences -->
+
+
+    <!-- Section compétences avec barres de progression -->
     <section class="pre-hidden w-full max-w-3xl animate-fade-in-down" style="animation-delay:0.4s;">
       <h2 class="text-2xl font-bold text-orange-300 mb-4">Compétences</h2>
-      <div class="flex flex-wrap gap-6 justify-center">
-        <div class="flex flex-col items-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
-            class="w-12 h-12 mb-2">
-          <span>HTML5</span>
+      <div class="space-y-4">
+        <!-- HTML5 -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+              class="w-7 h-7">
+            <span class="font-semibold">HTML5</span>
+            <span class="ml-auto text-sm text-gray-400">90%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
         </div>
-        <div class="flex flex-col items-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
-            class="w-12 h-12 mb-2">
-          <span>CSS3</span>
+        <!-- CSS3 -->
+        <!-- Tailwind CSS -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+              alt="Tailwind CSS" class="w-7 h-7">
+            <span class="font-semibold">Tailwind CSS</span>
+            <span class="ml-auto text-sm text-gray-400">85%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full transition-all duration-700" style="width:85%"></div>
+          </div>
         </div>
-        <div class="flex flex-col items-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript" class="w-12 h-12 mb-2">
-          <span>JavaScript</span>
+        <!-- JavaScript -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" class="w-7 h-7">
+            <span class="font-semibold">JavaScript</span>
+            <span class="ml-auto text-sm text-gray-400">75%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full" style="width: 75%"></div>
+          </div>
         </div>
-        <div class="flex flex-col items-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
-            class="w-12 h-12 mb-2">
-          <span>React</span>
+        <!-- React -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+              class="w-7 h-7">
+            <span class="font-semibold">React</span>
+            <span class="ml-auto text-sm text-gray-400">70%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full" style="width: 70%"></div>
+          </div>
         </div>
-        <!-- Ajoute d'autres compétences si besoin -->
+
+        <!-- PHP -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+              class="w-7 h-7">
+            <span class="font-semibold">MySQL</span>
+            <span class="ml-auto text-sm text-gray-400">45%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full" style="width: 45%"></div>
+          </div>
+        </div>
+
+        <!-- MySQL -->
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+              class="w-7 h-7">
+            <span class="font-semibold">MySQL</span>
+            <span class="ml-auto text-sm text-gray-400">40%</span>
+          </div>
+          <div class="w-full bg-zinc-800 rounded-full h-2.5">
+            <div class="bg-orange-400 h-2.5 rounded-full" style="width: 40%"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -130,12 +196,12 @@
     <section class="pre-hidden w-full max-w-3xl animate-fade-in-down" style="animation-delay:0.5s;">
       <h2 class="text-2xl font-bold text-orange-300 mb-4">Qualités humaines</h2>
       <ul class="flex flex-wrap gap-4 justify-center text-gray-300 text-lg">
-        <li class="bg-zinc-800 px-4 py-2 rounded-full hover:">Curieux</li>
-        <li class="bg-zinc-800 px-4 py-2 rounded-full">Créatif</li>
-        <li class="bg-zinc-800 px-4 py-2 rounded-full">Rigoureux</li>
-        <li class="bg-zinc-800 px-4 py-2 rounded-full">Esprit d'équipe</li>
-        <li class="bg-zinc-800 px-4 py-2 rounded-full">Autonome</li>
-      </ul>
+  <li class="bg-zinc-800 px-4 py-2 rounded-full hover:bg-orange-400 hover:text-zinc-950 transition">Curieux</li>
+  <li class="bg-zinc-800 px-4 py-2 rounded-full hover:bg-orange-400 hover:text-zinc-950 transition">Créatif</li>
+  <li class="bg-zinc-800 px-4 py-2 rounded-full hover:bg-orange-400 hover:text-zinc-950 transition">Rigoureux</li>
+  <li class="bg-zinc-800 px-4 py-2 rounded-full hover:bg-orange-400 hover:text-zinc-950 transition">Esprit d'équipe</li>
+  <li class="bg-zinc-800 px-4 py-2 rounded-full hover:bg-orange-400 hover:text-zinc-950 transition">Autonome</li>
+</ul>
     </section>
 
   </main>
@@ -163,6 +229,51 @@
 
     </div>
   </footer>
+
+
+
+
+
+  <style>
+    /* Lampe de lave */
+    #lava-lamp {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    /* Animation des bulles */
+    @keyframes float {
+      0% {
+        transform: translateY(0%) rotate(0deg) scale(0.8);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: translateY(-50vh) rotate(45deg) scale(1.2);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(-100vh) rotate(90deg) scale(1);
+
+        .bubble {
+          position: absolute;
+          bottom: 0;
+          width: 50px;
+          height: 50px;
+          background-color: orange;
+          border-radius: 50%;
+          animation: float 5s linear infinite;
+
+        }
+      }
+    }
+  </style>
 
 
 </body>
