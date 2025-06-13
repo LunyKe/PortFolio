@@ -134,3 +134,27 @@ document.querySelectorAll('.pre-hidden').forEach(el => {
       el.classList.remove('pre-hidden');
     }, (delay + 1) * 1000); // 1s = durée de l'animation
   });
+
+// Initialisation de EmailJS pour le formulaire de contact
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialisation EmailJS (remplace par ta clé publique)
+  emailjs.init("2Hti114YnD_IYsuUY");
+
+  // Gestion du formulaire de contact
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  if (form && status) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = "Envoi en cours...";
+      emailjs.sendForm('service_236uqhe', 'modèle_hoji2mr', form)
+        .then(() => {
+          status.textContent = "Message envoyé !";
+          form.reset();
+        })
+        .catch(() => {
+          status.textContent = "Erreur lors de l'envoi.";
+        });
+    });
+  }
+});

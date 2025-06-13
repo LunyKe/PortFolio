@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portefolio J.C</title>
   <script defer src="/portefolio.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -54,18 +55,36 @@
     </div>
 
     <!-- Formulaire de contact -->
-    <form action="mailto:Jduquesne17@gmail.com" method="POST" class="flex flex-col gap-4 mb-10">
-      <input type="text" name="name" placeholder="Votre nom" required
-        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
-      <input type="email" name="email" placeholder="Votre email" required
-        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
-      <textarea name="message" rows="4" placeholder="Votre message" required
-        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition"></textarea>
-      <button type="submit"
-        class="bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition">
-        Envoyer
-      </button>
-    </form>
+   <form id="contactForm" class="flex flex-col gap-4 mb-10">
+  <input
+    type="text"
+    name="name"
+    placeholder="Votre nom"
+    required
+    class="bg-zinc-800 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre email"
+    required
+    class="bg-zinc-800 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+  />
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Votre message"
+    required
+    class="bg-zinc-800 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-400 transition resize-none"
+  ></textarea>
+  <button
+    type="submit"
+    class="bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition"
+  >
+    Envoyer
+  </button>
+</form>
+<p id="formStatus" class="text-center text-orange-400 font-semibold mt-2"></p>
 
     <!-- Icônes Contact -->
     <div class="flex flex-col items-center gap-8">
