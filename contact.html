@@ -15,77 +15,115 @@
   <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
 
   <!-- Barre de navigation -->
-<nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4">
-  <div class="max-w-6xl mx-auto flex items-center justify-between">
-    
-    <!-- Logo -->
-    <a href="/index.html" class="text-orange-400 text-2xl font-bold tracking-wide">
-      J.C | Dev
-    </a>
+  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
 
-    <!-- Liens -->
-    <ul class="flex gap-6 text-white font-medium relative">
-      <li class="relative"><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
-      <li class="relative"><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
-      <li class="relative"><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
-      <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400 ">Contacts</a></li>
-      
-    </ul>
-    
+      <!-- Logo -->
+      <a href="/index.html" class="text-orange-400 text-2xl font-bold tracking-wide">
+        J.C | Dev
+      </a>
 
-  </div>
-</nav>
+      <!-- Liens -->
+      <ul class="flex gap-6 text-white font-medium relative">
+        <li class="relative"><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
+        <li class="relative"><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a>
+        </li>
+        <li class="relative"><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a>
+        </li>
+        <li class="relative"><a href="#" class="nav-link px-2 py-1 text-orange-400 ">Contacts</a></li>
+
+      </ul>
 
 
-<section class="max-w-md mx-auto py-16 bg-gradient-to-r from-zinc-900 to-gray-800 text-white rounded-lg shadow-xl mt-24 p-8 relative">
-  <h2 class="text-orange-400 text-4xl font-bold mb-2 text-center">Me Contacter</h2>
-  <p class="text-orange-300 italic text-center mb-6">N’hésitez pas à me contacter pour toute question, projet ou collaboration !</p>
+    </div>
+  </nav>
 
-  <!-- Photo -->
-  <div class="flex flex-col items-center mb-8">
-    <img src="img/IAmage.jpg" alt="Photo de profil de Jordan Campillo-Duquesne" class="w-32 h-32 rounded-full shadow-lg border-4 border-orange-500">
-    <h3 class="text-xl font-semibold mt-4">Jordan</h3>
-    <p class="text-sm text-gray-400">Développeur Web Passionné</p>
-  </div>
 
-  <!-- Formulaire de contact -->
-  <form action="mailto:Jduquesne17@gmail.com" method="POST" class="flex flex-col gap-4 mb-10">
-    <input type="text" name="name" placeholder="Votre nom" required class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
-    <input type="email" name="email" placeholder="Votre email" required class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
-    <textarea name="message" rows="4" placeholder="Votre message" required class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition"></textarea>
-    <button type="submit" class="bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition">
-      Envoyer
+  <section
+    class="max-w-md mx-auto py-16 bg-gradient-to-r from-zinc-900 to-gray-800 text-white rounded-lg shadow-xl mt-24 p-8 relative">
+    <h2 class="text-orange-400 text-4xl font-bold mb-2 text-center">Me Contacter</h2>
+    <p class="text-orange-300 italic text-center mb-6">N’hésitez pas à me contacter pour toute question, projet ou
+      collaboration !</p>
+
+    <!-- Photo -->
+    <div class="flex flex-col items-center mb-8">
+      <img src="img/IAmage.jpg" alt="Photo de profil de Jordan Campillo-Duquesne"
+        class="w-32 h-32 rounded-full shadow-lg border-4 border-orange-500">
+      <h3 class="text-xl font-semibold mt-4">Jordan</h3>
+      <p class="text-sm text-gray-400">Développeur Web Passionné</p>
+    </div>
+
+    <!-- Formulaire de contact -->
+    <form action="mailto:Jduquesne17@gmail.com" method="POST" class="flex flex-col gap-4 mb-10">
+      <input type="text" name="name" placeholder="Votre nom" required
+        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
+      <input type="email" name="email" placeholder="Votre email" required
+        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition" />
+      <textarea name="message" rows="4" placeholder="Votre message" required
+        class="bg-zinc-800 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400 transition"></textarea>
+      <button type="submit"
+        class="bg-orange-400 text-zinc-950 font-bold px-6 py-2 rounded-full shadow-lg hover:bg-orange-500 transition">
+        Envoyer
+      </button>
+    </form>
+
+    <!-- Icônes Contact -->
+    <div class="flex flex-col items-center gap-8">
+      <!-- Email -->
+      <a href="mailto:Jduquesne17@gmail.com"
+        class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110"
+        aria-label="Envoyer un email">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z" stroke="none" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+        <span class="text-xl font-semibold">Par Email</span>
+      </a>
+      <!-- Téléphone -->
+      <a href="tel:0648436340"
+        class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110"
+        aria-label="Appeler par téléphone">
+        <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path
+            d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z" />
+        </svg>
+        <span class="text-xl font-semibold">Par Téléphone : 06 48 43 63 40</span>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/" target="_blank" rel="noopener noreferrer"
+        class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110"
+        aria-label="Voir mon profil LinkedIn">
+        <svg class="w-10 h-10 rounded-lg shadow-lg bg-white" viewBox="0 0 24 24" fill="currentColor">
+          <rect width="24" height="24" rx="6" fill="#fff" />
+          <path
+            d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"
+            fill="#0A66C2" />
+        </svg>
+        <span class="text-xl font-semibold">LinkedIn</span>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/LunyKe" target="_blank" rel="noopener noreferrer"
+        class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110"
+        aria-label="Voir mon profil LinkedIn">
+        <svg class="w-10 h-10 rounded-lg shadow-lg bg-white" viewBox="0 0 24 24" fill="currentColor">
+          <rect width="24" height="24" rx="6" fill="#fff" />
+          <path
+            d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.61-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.37 9.37 0 0 1 12 6.84c.85.004 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.58.69.48C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2z"
+            fill="#181717" />
+        </svg>
+        <span class="text-xl font-semibold">GitHub</span>
+      </a>
+
+    </div>
+    <!-- Bouton retour en haut -->
+    <button id="backToTop"
+      class="fixed bottom-6 right-6 z-50 bg-orange-400 text-zinc-950 rounded-full p-3 shadow-lg hover:bg-orange-500 transition opacity-0 pointer-events-none"
+      aria-label="Retour en haut">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+      </svg>
     </button>
-  </form>
-
-  <!-- Icônes Contact -->
-  <div class="flex flex-col items-center gap-8">
-    <!-- Email -->
-    <a href="mailto:Jduquesne17@gmail.com" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110" aria-label="Envoyer un email">
-      <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6l-10 7L2 6" /></svg>
-      <span class="text-xl font-semibold">Par Email</span>
-    </a>
-    <!-- Téléphone -->
-    <a href="tel:0648436340" class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110" aria-label="Appeler par téléphone">
-      <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"/></svg>
-      <span class="text-xl font-semibold">Par Téléphone : 06 48 43 63 40</span>
-    </a>
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/" target="_blank" rel="noopener noreferrer"
-      class="group flex items-center gap-4 text-orange-400 hover:text-orange-500 transform transition duration-300 hover:scale-110"
-      aria-label="Voir mon profil LinkedIn">
-      <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0zM2 20v-7h4v7H2zm6-7h4v7H8v-7z"/></svg>
-      <span class="text-xl font-semibold">LinkedIn</span>
-  </div>
-  <!-- Bouton retour en haut -->
-  <button id="backToTop"
-    class="fixed bottom-6 right-6 z-50 bg-orange-400 text-zinc-950 rounded-full p-3 shadow-lg hover:bg-orange-500 transition opacity-0 pointer-events-none"
-    aria-label="Retour en haut">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-    </svg>
-  </button>
-</section>
+  </section>
 
 
 
