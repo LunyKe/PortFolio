@@ -127,3 +127,10 @@ mobileMenu.querySelectorAll('a').forEach(link => {
     mobileMenu.classList.remove('opacity-100');
   });
 });
+
+document.querySelectorAll('.pre-hidden').forEach(el => {
+    const delay = parseFloat(el.style.animationDelay) || 0;
+    setTimeout(() => {
+      el.classList.remove('pre-hidden');
+    }, (delay + 1) * 1000); // 1s = durée de l'animation
+  });

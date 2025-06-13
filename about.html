@@ -246,6 +246,26 @@
       overflow: hidden;
     }
 
+    .pre-hidden {
+      opacity: 0;
+    }
+
+    @keyframes fade-in-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fade-in-down 1s ease-out;
+    }
+
     /* Animation des bulles */
     @keyframes float {
       0% {
