@@ -34,17 +34,56 @@
   <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
 
   <!-- Barre de navigation -->
-  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-10">
+  <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="/" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
-      <ul class="flex gap-6 text-white font-medium">
+      <!-- Logo -->
+      <a href="./index.html" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
+      <!-- Liens desktop -->
+      <ul class="hidden md:flex gap-6 text-white font-medium">
         <li><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
-        <li><a href="" class="nav-link px-2 py-1 text-orange-400">À mon sujet</a></li>
+        <li><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
         <li><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
         <li><a href="./contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
       </ul>
+      <!-- Bouton burger mobile -->
+      <button id="burger-btn" class="md:hidden text-orange-400 focus:outline-none" aria-label="Ouvrir le menu">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </nav>
+
+  <!-- Menu mobile (caché par défaut) -->
+  <div id="mobile-menu"
+  class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
+  <ul class="flex flex-col gap-4 text-white font-medium">
+    <li>
+      <a href="./index.html"
+         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+        Accueil
+      </a>
+    </li>
+    <li>
+      <a href="./about.html"
+         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+        À mon sujet
+      </a>
+    </li>
+    <li>
+      <a href="./projects.html"
+         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+        Mes projets
+      </a>
+    </li>
+    <li>
+      <a href="./contact.html"
+         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+        Contacts
+      </a>
+    </li>
+  </ul>
+</div>
 
   <main class="pt-32 flex flex-col items-center gap-12 px-4">
 
