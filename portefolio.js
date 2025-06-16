@@ -101,24 +101,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Initialisation de EmailJS pour le formulaire de contact
-document.addEventListener("DOMContentLoaded", function () {
-  if (typeof emailjs !== "undefined") {
-    emailjs.init("2Hti114YnD_IYsuUY"); // Remplace par ta clé publique
+// Initialisation EmailJS (remplace par ta clé publique)
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("2Hti114YnD_IYsuUY");
+
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
-    if (form && status) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        status.textContent = "Envoi en cours...";
-        emailjs.sendForm('service_236uqhe', 'modèle_hoji2mr', form)
-          .then(() => {
-            status.textContent = "Message envoyé !";
-            form.reset();
-          })
-          .catch(() => {
-            status.textContent = "Erreur lors de l'envoi.";
-          });
-      });
-    }
-  }
-});
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      status.textContent = "Envoi en cours...";
+      emailjs.sendForm('service_236uqhe', 'template_nsp6f3m', form)
+        .then(() => {
+          status.textContent = "Message envoyé !";
+          form.reset();
+        })
+        .catch(() => {
+          status.textContent = "Erreur lors de l'envoi.";
+        });
+    });
+  });
+
