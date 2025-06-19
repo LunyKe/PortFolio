@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le BTS</title>
+    <script defer src="portefolio.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-zinc-950 w-full">
+
+    <!-- Lampe de lave -->
+    <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
+
+    <!-- Barre de navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="./index.html" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
+            <!-- Liens desktop -->
+            <ul class="hidden md:flex gap-6 text-white font-medium">
+                <li><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
+                <li><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
+                <li><a href="./formation.html" class="nav-link px-2 py-1 hover:text-orange-400 text-orange-400">Le
+                        BTS</a></li>
+                <li><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
+                <li><a href="./contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+            </ul>
+            <!-- Bouton burger mobile -->
+            <button id="burger-btn" class="md:hidden text-orange-400 focus:outline-none" aria-label="Ouvrir le menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu mobile (caché par défaut) -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
+        <ul class="flex flex-col gap-4 text-white font-medium">
+            <li>
+                <a href="./index.html"
+                    class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+                    Accueil
+                </a>
+            </li>
+            <li>
+                <a href="./about.html"
+                    class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+                    À mon sujet
+                </a>
+            </li>
+            <li>
+                <a href="./formation.html"
+                    class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+                    Le BTS
+                </a>
+            </li>
+            <li>
+                <a href="./projects.html"
+                    class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+                    Mes projets
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html"
+                    class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenu principal -->
+    <main class="max-w-6xl mx-auto px-4 py-16 flex flex-col items-center justify-center text-center">
+        <div
+            class="bg-orange-900/20 backdrop-blur-xl shadow-2xl shadow-orange-500/40 p-10 rounded-3xl border border-orange-500/50 pre-hidden max-w-2xl text-center text-lg text-gray-200 animate-fade-in-down">
+            <h1 class="text-4xl font-bold text-orange-400 mb-8 animate-fade-in-down">Le BTS SIO</h1>
+            <p class="text-white mb-6 animate-fade-in-down">
+                Le BTS SIO (Services Informatiques aux Organisations) est une formation de deux ans qui prépare les
+                étudiants à
+                devenir des professionnels de l'informatique. Il offre deux spécialités : SISR (Solutions
+                d'Infrastructure,
+                Systèmes et Réseaux) et SLAM (Solutions Logicielles et Applications Métiers).
+            </p>
+            <p class="text-white mb-6 animate-fade-in-down">
+                Le BTS SIO est reconnu pour sa polyvalence et sa capacité à former des techniciens capables de répondre
+                aux
+                besoins informatiques des entreprises. Les étudiants acquièrent des compétences en développement, en
+                gestion
+                de réseaux, en administration de systèmes et en support technique.
+            </p>
+            <p class="text-white mb-6 animate-fade-in-down">
+                La formation comprend des cours théoriques et pratiques, ainsi que des stages en entreprise pour une
+                immersion
+                dans le monde professionnel. Les diplômés du BTS SIO sont recherchés par les employeurs pour leur
+                expertise
+                technique et leur capacité à s'adapter aux évolutions technologiques.
+            </p>
+        </div>
+
+        <h2 class="text-3xl font-bold text-orange-400 mt-12 mb-6 animate-fade-in-down">Spécialités du BTS SIO</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <!-- Carte SISR -->
+            <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow-lg p-6 flex flex-col items-center gap-4">
+                <h3 class="text-2xl font-bold text-orange-400 mb-2">SISR</h3>
+                <p class="text-gray-300 mb-4 text-center">Spécialité orientée réseaux, systèmes et sécurité
+                    informatique.</p>
+                <div class="w-full flex flex-col gap-4">
+                    <div class="bg-zinc-800/80 p-4 rounded-lg">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">🛠️</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Compétences
+                                techniques</h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Administration Windows</li>
+                            <li>Administration Linux</li>
+                            <li>Virtualisation</li>
+                            <li>Réseaux TCP/IP</li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-900/80 p-4 rounded-lg border-t border-zinc-700">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">🔒</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Sécurité et Services
+                            </h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Active Directory</li>
+                            <li>Pare-feu</li>
+                            <li>VPN</li>
+                            <li>Supervision</li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-800/80 p-4 rounded-lg border-t border-zinc-700">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">🎯</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Débouchés
+                                professionnels</h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Administrateur réseaux</li>
+                            <li>Technicien support</li>
+                            <li>Responsable Infrastructure</li>
+                            <li>Consultant cybersécurité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Carte SLAM -->
+            <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow-lg p-6 flex flex-col items-center gap-4">
+                <h3 class="text-2xl font-bold text-orange-400 mb-2">SLAM</h3>
+                <p class="text-gray-300 mb-4 text-center">Spécialité orientée développement d’applications et
+                programmation.</p>
+                <div class="w-full flex flex-col gap-4">
+                    <div class="bg-zinc-800/80 p-4 rounded-lg">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">💻</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Compétences
+                                techniques</h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Développement Web</li>
+                            <li>Applications mobiles</li>
+                            <li>Base de données</li>
+                            <li>Programmation Objet</li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-900/80 p-4 rounded-lg border-t border-zinc-700">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">🛡️</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Technologies</h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Java, Python</li>
+                        <li>React, Angular</li>
+                        <li>HTML,CSS,JavaScript</li>
+                        <li>SQL, NoSQL</li>
+                        </ul>
+                    </div>
+                    <div class="bg-zinc-800/80 p-4 rounded-lg border-t border-zinc-700">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-orange-400 text-lg">🎯</span>
+                            <h4 class="text-orange-400 text-sm font-bold uppercase tracking-wider">Débouchés professionnels</h4>
+                        </div>
+                        <ul
+                            class="text-orange-200 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside">
+                            <li>Développeur d'Applications</li>
+                        <li>Développeur web</li>
+                        <li>Analyste programmeur</li>
+                        <li>Chef de projet junior</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+<!-- Footer -->
+  <footer class="bg-zinc-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-6">
+
+      <!-- Logo / Nom -->
+      <p class="text-lg font-semibold text-orange-400">
+        Jordan Campillo-Duquesne | Artisan du Code
+      </p>
+
+      <!-- Liens -->
+      <ul class="flex gap-4 text-sm">
+        <li><a href="./about.html" class="hover:text-orange-400 transition">About Me</a></li>
+        <li><a href="./contact.html" class="hover:text-orange-400 transition">Contacts</a></li>
+        <li><a href="https://github.com/LunyKe" class="hover:text-orange-400 transition">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jordan-c-873a3b1b5/"
+            class="hover:text-orange-400 transition">LinkedIn</a></li>
+      </ul>
+
+      <!-- Copyright -->
+      <p class="text-xs text-gray-400">© 2025 Jordan Campillo-Duquesne. Tous droits réservés.</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* Lampe de lave */
+        #lava-lamp {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .pre-hidden {
+            opacity: 0;
+        }
+
+        @keyframes fade-in-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-down {
+            animation: fade-in-down 1s ease-out;
+        }
+
+        /* Animation des bulles */
+        @keyframes float {
+            0% {
+                transform: translateY(0%) rotate(0deg) scale(0.8);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: translateY(-50vh) rotate(45deg) scale(1.2);
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(90deg) scale(1);
+
+                .bubble {
+                    position: absolute;
+                    bottom: 0;
+                    width: 50px;
+                    height: 50px;
+                    background-color: orange;
+                    border-radius: 50%;
+                    animation: float 5s linear infinite;
+
+                }
+            }
+        }
+    </style>
+
+</body>
+
+</html>

@@ -25,7 +25,9 @@
       <ul class="hidden md:flex gap-6 text-white font-medium">
         <li><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
         <li><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
-        <li><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
+        <li><a href="./formation.html" class="nav-link px-2 py-1 hover:text-orange-400">Le BTS</a></li>
+        <li><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400 text-orange-400">Mes projets</a>
+        </li>
         <li><a href="./contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
       </ul>
       <!-- Bouton burger mobile -->
@@ -39,34 +41,40 @@
 
   <!-- Menu mobile (caché par défaut) -->
   <div id="mobile-menu"
-  class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
-  <ul class="flex flex-col gap-4 text-white font-medium">
-    <li>
-      <a href="./index.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Accueil
-      </a>
-    </li>
-    <li>
-      <a href="./about.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        À mon sujet
-      </a>
-    </li>
-    <li>
-      <a href="./projects.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Mes projets
-      </a>
-    </li>
-    <li>
-      <a href="./contact.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Contacts
-      </a>
-    </li>
-  </ul>
-</div>
+    class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
+    <ul class="flex flex-col gap-4 text-white font-medium">
+      <li>
+        <a href="./index.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Accueil
+        </a>
+      </li>
+      <li>
+        <a href="./about.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          À mon sujet
+        </a>
+      </li>
+      <li>
+        <a href="./formation.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Le BTS
+        </a>
+      </li>
+      <li>
+        <a href="./projects.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Mes projets
+        </a>
+      </li>
+      <li>
+        <a href="./contact.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <section class="pt-32 flex flex-col items-center gap-12 px-4">
     <h1 class="pre-hidden text-4xl md:text-5xl font-extrabold text-orange-400 animate-fade-in-down"
@@ -85,7 +93,7 @@
           class="rounded-lg h-100  mb-2 group-hover:brightness-110 transition" />
         <div class="flex items-center gap-2">
           <h2 class="text-xl font-bold text-orange-300">NebulaX</h2>
-          
+
         </div>
         <p class="text-gray-300 text-sm">Mon tout premier site vitrine, réalisé en HTML5 et CSS3.</p>
         <div class="flex gap-2 flex-wrap">
@@ -128,7 +136,7 @@
           class="rounded-lg h-100 object-cover mb-2 group-hover:brightness-110 transition" />
         <div class="flex items-center gap-2">
           <h2 class="text-xl font-bold text-orange-300">ViteAmine</h2>
-          
+
         </div>
         <p class="text-gray-300 text-sm">Mon premier projet avec React / Vite</p>
         <div class="flex gap-2 flex-wrap">
@@ -170,7 +178,7 @@
           class="rounded-lg h-100 object-cover mb-2 group-hover:brightness-110 transition">
         <div class="flex items-center gap-2">
           <h2 class="text-xl font-bold text-orange-300">API Movies</h2>
-        <span class="bg-orange-500 text-xs text-white px-2 py-1 rounded-full">Nouveau</span>
+          <span class="bg-orange-500 text-xs text-white px-2 py-1 rounded-full">Nouveau</span>
         </div>
         <p class="text-gray-300 text-sm">Consommation d’API de films, affichage dynamique et recherche instantanée.</p>
         <div class="flex gap-2 flex-wrap">
@@ -187,14 +195,14 @@
         </div>
       </div>
 
-<!--Projet 4-->
+      <!--Projet 4-->
       <div
         class="bg-zinc-900/70 backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col gap-4 hover:scale-105 hover:shadow-orange-400/30 transition duration-300 group">
         <img src="./img/Logo pokémon.webp" alt="Projet 3"
           class="rounded-lg h-100 object-cover mb-2 group-hover:brightness-110 transition">
         <div class="flex items-center gap-2">
           <h2 class="text-xl font-bold text-orange-300">Pokédex</h2>
-        <span class="bg-orange-500 text-xs text-white px-2 py-1 rounded-full">Nouveau</span>
+          <span class="bg-orange-500 text-xs text-white px-2 py-1 rounded-full">Nouveau</span>
         </div>
         <p class="text-gray-300 text-sm">Affichage d'un Pokédex grâce à une API</p>
         <div class="flex gap-2 flex-wrap">
@@ -211,17 +219,40 @@
             au site</a>
         </div>
       </div>
+
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col gap-4 hover:scale-105 hover:shadow-orange-400/30 transition duration-300 group">
+        <img src="./img/kinesso_japan_logo.jpg" alt="Projet 3"
+          class="rounded-lg h-100 object-cover mb-2 group-hover:brightness-110 transition">
+        <div class="flex items-center gap-2">
+          <h2 class="text-xl font-bold text-orange-300">Pa Data Viewer</h2>
+          <span class="bg-orange-500 text-xs text-white px-2 py-1 rounded-full">Nouveau</span>
+        </div>
+        <p class="text-gray-300 text-sm">Création d'une application de statistique médiatique</p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="bg-orange-400/20 text-orange-300 px-2 py-1 rounded-full text-xs">HTML</span>
+          <span class="bg-orange-400/20 text-orange-300 px-2 py-1 rounded-full text-xs">TailwindCSS</span>
+          <span class="bg-orange-400/20 text-orange-300 px-2 py-1 rounded-full text-xs">JavaScript</span>
+          <span class="bg-orange-400/20 text-orange-300 px-2 py-1 rounded-full text-xs">API</span>
+        </div>
+        <div class="flex gap-4 mt-2">
+          <a href="/Doc/Projet kinesso.pdf" target="_blank"
+            class="bg-orange-400 rounded-lg hover:text-white px-6 py-2 min-w-[140px] text-center font-semibold transition">Accéder
+            à la Démo</a>
+        </div>
+      </div>
       <!-- Ajoute d'autres projets ici -->
     </div>
 
-    
+
 
     <!-- Section des documentations -->
     <h2 class="text-2xl font-bold text-orange-300 mb-6 ">Documentations associées</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-co  ls-3 gap-6 flex-wrap  max-w-6xl">
 
       <!-- Doc NebulaX -->
-      <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-3 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-3 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
         <h3 class="text-lg font-semibold text-orange-400 mb-2">NebulaX</h3>
         <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
           <li>
@@ -232,17 +263,20 @@
       </div>
 
       <!-- Doc ViteAmine -->
-      <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
         <h3 class="text-lg font-semibold text-orange-400 mb-2">ViteAmine</h3>
         <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
           <li>
-            <a href="./Doc/Documentation_ViteAmine.pdf" target="_blank" class="text-orange-300 hover:underline">Documentation
+            <a href="./Doc/Documentation_ViteAmine.pdf" target="_blank"
+              class="text-orange-300 hover:underline">Documentation
               PDF</a>
           </li>
         </ul>
       </div>
       <!-- Doc API Movies -->
-      <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
         <h3 class="text-lg font-semibold text-orange-400 mb-2">API Movies</h3>
         <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
           <li>
@@ -252,12 +286,22 @@
         </ul>
       </div>
       <!-- Doc NebulaX -->
-      <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-3 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-3 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
         <h3 class="text-lg font-semibold text-orange-400 mb-2">Pokédex</h3>
         <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
           <li>
-            <a href="./Doc/Pokédex.pdf" target="_blank"
-              class="text-orange-300 hover:underline">Documentation PDF</a>
+            <a href="./Doc/Pokédex.pdf" target="_blank" class="text-orange-300 hover:underline">Documentation PDF</a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-3 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+        <h3 class="text-lg font-semibold text-orange-400 mb-2">Pa Data Viewer</h3>
+        <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
+          <li>
+            <a href="./Doc/Pa Data Viewer.pdf" target="_blank" class="text-orange-300 hover:underline">Documentation PDF</a>
           </li>
         </ul>
       </div>
@@ -269,13 +313,14 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- Le cloud-Computing -->
-      <div class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+      <div
+        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
         <h3 class="text-lg font-semibold text-orange-400 mb-2">Le Cloud Computing</h3>
         <p class="text-gray-300 text-sm mb-2">
           La présentation et l'exposé sur le Cloud Computing, ses avantages et ses inconvénients.
         </p>
-        <a href="./Doc/Veille_Cloud.pdf" target="_blank"
-          class="text-orange-300 hover:underline text-sm">Voir la présentation</a>
+        <a href="./Doc/Veille_Cloud.pdf" target="_blank" class="text-orange-300 hover:underline text-sm">Voir la
+          présentation</a>
       </div>
 
       <!-- Ajoute d'autres veilles ici -->
@@ -284,13 +329,13 @@
 
 
   <button id="backToTop"
-  class="fixed bottom-6 right-6 z-50 bg-orange-400 text-zinc-950 rounded-full p-3 shadow-lg hover:bg-orange-500 transition opacity-0 pointer-events-none"
-  aria-label="Retour en haut">
-  <!-- Icône flèche vers le haut -->
-  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
-  </svg>
-</button>
+    class="fixed bottom-6 right-6 z-50 bg-orange-400 text-zinc-950 rounded-full p-3 shadow-lg hover:bg-orange-500 transition opacity-0 pointer-events-none"
+    aria-label="Retour en haut">
+    <!-- Icône flèche vers le haut -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
 
 
 

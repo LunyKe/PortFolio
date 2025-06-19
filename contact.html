@@ -15,7 +15,7 @@
   <!-- Lampe de lave -->
   <div id="lava-lamp" class="relative w-full h-screen overflow-hidden"></div>
 
-  <!-- Barre de navigation -->
+ <!-- Barre de navigation -->
   <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <!-- Logo -->
@@ -24,8 +24,9 @@
       <ul class="hidden md:flex gap-6 text-white font-medium">
         <li><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
         <li><a href="./about.html" class="nav-link px-2 py-1 hover:text-orange-400">À mon sujet</a></li>
+        <li><a href="./formation.html" class="nav-link px-2 py-1 hover:text-orange-400">Le BTS</a></li>
         <li><a href="./projects.html" class="nav-link px-2 py-1 hover:text-orange-400">Mes projets</a></li>
-        <li><a href="./contact.html" class="nav-link px-2 py-1 hover:text-orange-400">Contacts</a></li>
+        <li><a href="./contact.html" class="nav-link px-2 py-1 hover:text-orange-400 text-orange-400">Contacts</a></li>
       </ul>
       <!-- Bouton burger mobile -->
       <button id="burger-btn" class="md:hidden text-orange-400 focus:outline-none" aria-label="Ouvrir le menu">
@@ -36,36 +37,42 @@
     </div>
   </nav>
 
-  <!-- Menu mobile (caché par défaut) -->
+<!-- Menu mobile (caché par défaut) -->
   <div id="mobile-menu"
-  class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
-  <ul class="flex flex-col gap-4 text-white font-medium">
-    <li>
-      <a href="./index.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Accueil
-      </a>
-    </li>
-    <li>
-      <a href="./about.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        À mon sujet
-      </a>
-    </li>
-    <li>
-      <a href="./projects.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Mes projets
-      </a>
-    </li>
-    <li>
-      <a href="./contact.html"
-         class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
-        Contacts
-      </a>
-    </li>
-  </ul>
-</div>
+    class="fixed top-0 left-0 w-full bg-zinc-900/90 backdrop-blur-md shadow-lg p-4 z-50 md:hidden opacity-0 pointer-events-none transition">
+    <ul class="flex flex-col gap-4 text-white font-medium">
+      <li>
+        <a href="./index.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Accueil
+        </a>
+      </li>
+      <li>
+        <a href="./about.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          À mon sujet
+        </a>
+      </li>
+      <li>
+        <a href="./formation.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Le BTS
+        </a>
+      </li>
+      <li>
+        <a href="./projects.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Mes projets
+        </a>
+      </li>
+      <li>
+        <a href="./contact.html"
+          class="block w-full px-4 py-3 rounded-xl shadow hover:bg-orange-400 hover:text-zinc-950 transition duration-200">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <section
     class="max-w-md mx-auto py-16 bg-gradient-to-r from-zinc-900 to-gray-800 text-white rounded-lg shadow-xl mt-24 p-8 relative">
