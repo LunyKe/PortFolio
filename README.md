@@ -24,7 +24,7 @@ Pas besoin de build ou d'environnement complexe. Il suffit de cloner le repo et 
 
 ```bash
 git clone (https://github.com/LunyKe/PortFolio.git)
-cd PortFolio![Capture d'écran 2025-06-20 144825](https://github.com/user-attachments/assets/3dc3d92c-809f-4bdd-9a96-02586478db82)
+cd PortFolio!
 
 Pour me contacter :
 
