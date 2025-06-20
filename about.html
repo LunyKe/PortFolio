@@ -7,27 +7,6 @@
   <title>À mon sujet | Portefolio J.C</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="./portefolio.js"></script>
-  <style>
-    .pre-hidden {
-      opacity: 0;
-    }
-
-    @keyframes fade-in-down {
-      0% {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fade-in-down {
-      animation: fade-in-down 1s ease-out;
-    }
-  </style>
 </head>
 
 <body class="bg-zinc-950 min-h-screen text-white">
@@ -37,7 +16,7 @@
   <nav class="fixed top-0 left-0 w-full bg-zinc-900/80 backdrop-blur-md shadow-lg p-4 z-50">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <!-- Logo -->
-      <a href="./index.html" class="text-orange-400 text-2xl font-bold tracking-wide">J.C | Dev</a>
+      <a href="./index.html" class="text-orange-400 text-2xl font-bold tracking-wide"><img class="h-16 w-auto  object-contain rounded-md" src="./img/Create a realistic n.png" alt="J.C"></a>
       <!-- Liens desktop -->
       <ul class="hidden md:flex gap-6 text-white font-medium">
         <li><a href="./index.html" class="nav-link px-2 py-1 hover:text-orange-400">Accueil</a></li>
@@ -147,7 +126,7 @@
           <span>
             <span class="text-orange-400 font-semibold">2024-2026</span> – Formation BTS SIO (SLAM) - IPSSI
           </span>
-          <a href="ton_tableau_synthese.pdf" target="_blank"
+          <a href="./Doc/8-1 - BTS SIO - 2025 - Tableau de synthese.pdf" target="_blank"
             class="inline-flex items-center px-3 py-1 text-sm text-orange-100 border border-orange-300 rounded  transition">
             📄 Tableau de synthèse
           </a>
@@ -358,6 +337,28 @@
 
         }
       }
+    }
+  </style>
+
+  <style>
+    .pre-hidden {
+      opacity: 0;
+    }
+
+    @keyframes fade-in-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fade-in-down 1s ease-out;
     }
   </style>
 
