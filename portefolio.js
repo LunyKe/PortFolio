@@ -122,3 +122,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  function toggleCloudMore(e) {
+  e.preventDefault();
+  const more = document.getElementById('cloudMore');
+  const btn = document.getElementById('cloudBtn');
+  if (more.style.display === "none") {
+    more.style.display = "inline";
+    btn.textContent = "Voir moins";
+  } else {
+    more.style.display = "none";
+    btn.textContent = "Voir tout";
+  }
+}
+

@@ -452,8 +452,7 @@
         <h3 class="text-lg font-semibold text-orange-400 mb-2">Mon Portfolio</h3>
         <ul class="list-disc list-inside text-gray-300 text-sm space-y-1">
           <li>
-            <a href="" target="_blank"
-              class="text-orange-300 hover:underline">Documentation
+            <a href="./Doc/Portfolio.pdf" target="_blank" class="text-orange-300 hover:underline">Documentation
               PDF</a>
           </li>
         </ul>
@@ -467,7 +466,7 @@
 
       <!-- Le cloud-Computing -->
       <div
-        class="bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
+        class="relative bg-zinc-900/70 backdrop-blur-md rounded-xl shadow p-5 flex flex-col gap-2 hover:ring-2 ring-orange-400/30 transition">
 
         <span class="absolute top-4 right-4 z-10" title="Projet académique">
           <svg class="w-7 h-7 text-zinc-900 bg-orange-400 rounded-lg" fill="currentColor" viewBox="0 0 24 24">
@@ -477,15 +476,23 @@
         </span>
 
         <h3 class="text-lg font-semibold text-orange-400 mb-2">Le Cloud Computing</h3>
+
+        <!-- Résumé rapide -->
         <p class="text-gray-300 text-sm mb-2">
-          La présentation et l'exposé sur le Cloud Computing, ses avantages et ses inconvénients.
+          Le cloud computing permet d'accéder à des ressources informatiques à la demande via Internet.
+          <span class="inline" id="cloudMore" style="display:none;">
+            Le cloud computing, ou informatique en nuage, permet d'accéder à distance à des ressources comme des
+            serveurs, du stockage ou des bases de données, sans avoir besoin d'équipements physiques chez soi ou dans
+            l'entreprise. C'est flexible, économique et accessible partout via Internet.
+
+          </span>
+          <button class="text-orange-400 hover:underline ml-1 text-xs font-semibold" id="cloudBtn"
+            onclick="toggleCloudMore(event)">Voir tout</button>
         </p>
+
         <a href="./Doc/Veille_Cloud.pdf" target="_blank" class="text-orange-300 hover:underline text-sm">Voir la
           présentation</a>
       </div>
-
-      <!-- Ajoute d'autres veilles ici -->
-    </div>
   </section>
 
 
